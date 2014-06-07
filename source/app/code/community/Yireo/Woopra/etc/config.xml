@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Woopra plugin for Magento 
+ *
+ * @category    design_default
+ * @package     Yireo_Woopra
+ * @author      Yireo
+ * @copyright   Copyright (C) 2014 Yireo (http://www.yireo.com/)
+ * @license     Open Source License (OSL v3)
+ */
+-->
+<config>
+    <modules>
+        <Yireo_Woopra>
+            <version>1.1.0</version>
+        </Yireo_Woopra>
+    </modules>
+
+    <global>
+        <blocks>
+            <woopra>
+                <class>Yireo_Woopra_Block</class>
+            </woopra>
+        </blocks>
+        <helpers>
+            <woopra>
+                <class>Yireo_Woopra_Helper</class>
+            </woopra>
+        </helpers>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <woopra>
+                    <file>woopra.xml</file>
+                </woopra>
+            </updates>
+        </layout>
+    </frontend>
+
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <woopra translate="title" module="woopra">
+                                            <title>Woopra</title>
+                                        </woopra>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>
