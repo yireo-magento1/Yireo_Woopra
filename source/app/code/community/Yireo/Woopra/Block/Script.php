@@ -11,12 +11,9 @@
 
 class Yireo_Woopra_Block_Script extends Mage_Core_Block_Template
 {
-    /*
+    /**
      * Constructor method
      *
-     * @access public
-     * @param null
-     * @return null
      */
     public function _construct()
     {
@@ -29,10 +26,9 @@ class Yireo_Woopra_Block_Script extends Mage_Core_Block_Template
         }
     }
 
-    /*
+    /**
      * Helper method to get data to show in Woopra
      *
-     * @access public
      * @param string $key
      * @return string
      */
